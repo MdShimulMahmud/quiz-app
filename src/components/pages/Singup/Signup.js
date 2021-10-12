@@ -1,17 +1,18 @@
 import React from 'react';
-import Button from './Button';
-import Checkbox from './Checkbox';
-import Form from './Form';
-import Illustration from './Illustration';
+import signupImage from '../../../assets/images/signup.svg';
+import Button from '../Common/Button';
+import Checkbox from '../Common/Checkbox';
+import Form from '../Common/Form';
+import Illustration from '../Common/Illustration';
+import TextInput from '../Common/TextInput';
 import classes from './Singup.module.css';
-import TextInput from './TextInput';
 
 export default function Signup() {
     return (
         <>
             <h1>Create an account</h1>
             <div className="column">
-                <Illustration />
+                <Illustration image={signupImage} />
                 <Form className={`${classes.signup}`}>
                     <TextInput type="text" placeholder="Enter name" icon="person" />
 
@@ -23,7 +24,9 @@ export default function Signup() {
 
                     <Checkbox text="I agree to the Terms &amp; Conditions" />
 
-                    <Button>Submit Now</Button>
+                    <Button>
+                        <span>Submit Now</span>
+                    </Button>
 
                     <div className="info">
                         Already have an account? <a href="login.html">Login</a> instead.
