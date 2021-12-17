@@ -1,5 +1,8 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+>>>>>>> f59c9772610d8a7f47c20299fc4be75ad8e636c5
 import signupImage from '../../../assets/images/signup.svg';
 import Button from '../Common/Button';
 import Checkbox from '../Common/Checkbox';
