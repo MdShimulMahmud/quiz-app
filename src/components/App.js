@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '../styles/App.css';
 import Layout from './Layout';
-<<<<<<< HEAD
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Quiz from './pages/Quiz/Quiz';
 import Result from './pages/Result/Result';
 import Signup from './pages/Singup/Signup';
+<<<<<<< HEAD
 =======
 import Quiz from './pages/Quiz/Quiz';
 // import Login from './pages/Login/Login';
