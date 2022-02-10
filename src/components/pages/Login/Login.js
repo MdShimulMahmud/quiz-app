@@ -1,8 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
->>>>>>> f59c9772610d8a7f47c20299fc4be75ad8e636c5
 import loginImage from '../../../assets/images/login.svg';
 import Button from '../Common/Button';
 import Form from '../Common/Form';
@@ -24,11 +21,8 @@ export default function Login() {
                     <Button>Submit Now</Button>
 
                     <div className="info">
-<<<<<<< HEAD
                         Don&apos;t have an account? <Link to="/signup">Signup</Link> instead.
-=======
                         Don&apos;t have an account? <a href="signup.html">Signup</a> instead.
->>>>>>> f59c9772610d8a7f47c20299fc4be75ad8e636c5
                     </div>
                 </Form>
             </div>
