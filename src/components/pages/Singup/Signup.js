@@ -1,12 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import signupImage from '../../../assets/images/signup.svg';
-import Button from '../Common/Button';
-import Checkbox from '../Common/Checkbox';
-import Form from '../Common/Form';
 import Illustration from '../Common/Illustration';
-import TextInput from '../Common/TextInput';
-import classes from './Singup.module.css';
+import SignUpForm from './SignUpForm';
 
 export default function Signup() {
     return (
@@ -14,25 +9,7 @@ export default function Signup() {
             <h1>Create an account</h1>
             <div className="column">
                 <Illustration image={signupImage} />
-                <Form className={`${classes.signup}`}>
-                    <TextInput type="text" placeholder="Enter name" icon="person" />
-
-                    <TextInput type="text" placeholder="Enter email" icon="alternate_email" />
-
-                    <TextInput type="password" placeholder="Enter password" icon="lock" />
-
-                    <TextInput type="password" placeholder="Confirm password" icon="lock_clock" />
-
-                    <Checkbox text="I agree to the Terms &amp; Conditions" />
-
-                    <Button>
-                        <span>Submit Now</span>
-                    </Button>
-
-                    <div className="info">
-                        Already have an account? <Link to="/login">Login</Link> instead.
-                    </div>
-                </Form>
+                <SignUpForm />
             </div>
         </>
     );
